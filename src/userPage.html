@@ -1,0 +1,64 @@
+<!--// &#45;&#45;== CS400 File Header Information ==&#45;&#45;
+// Name: Anush Ram Reddy Kethi Reddy
+// Email: akethireddy@wisc.edu
+// Team: LD
+// Role: Frontend
+// TA: Divyanshu Saxena
+// Lecturer: Gary Dahl
+// Notes to Grader: <optional extra notes>
+-->
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="frontScript.js"></script>
+    <title>Password Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+        .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+        .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwords</title>
+</head>
+<body>
+<header class="w3-container w3-red w3-center" style="padding:128px 16px" id="header">
+    <h1 class="w3-margin w3-jumbo " >Welcome, <script>getUserName()</script><div id="welcomeUser"></div></h1>
+    <h1  class="w3-margin w3-jumbo " id = "welcomeName"></h1>
+    <br>
+    <br>
+    <div class="w3-gray w3-padding-16">Do you only want the password for a particular site ? If so, name the site as stored in our database below : -</div>
+    <br>
+    <form>
+        <label for="site">Site Name</label><br>
+        <input type="text" id="site" name="Site Name"><br>
+    </form>
+    <br>
+    <p id="messageSpot"></p>
+    <button type="button", onclick="showPassword()"> Show Password</button> </form> <br> <br>
+
+    <div class="w3-gray w3-padding-16">Do you want to add a site? Fill out the fields with the password and the name you want to associate with it.</div>
+    <br>
+    <form>
+        <label for="siteName">Site Name</label><br>
+        <input type="text" id="siteName" name="Site Name"><br>
+        <label for="siteUsername">Site Username</label><br>
+        <input type="text" id="siteUsername" name="Site Username"><br>
+        <label for="Password">Password</label><br>
+        <input type="password" id="password" name="Password"> <br>
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="Confirm Password">
+    </form>
+    <br>
+    <button class="w3-button w3-teal" onclick="addUserSite()">Add the password</button> <br> <br>
+    <div id="siteConfirmation" class="w3-bar w3-black" ></div>
+</header>
+</body>
+</html>

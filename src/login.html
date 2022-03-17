@@ -1,0 +1,36 @@
+<!--// &#45;&#45;== CS400 File Header Information ==&#45;&#45;
+// Name: Anush Ram Reddy Kethi Reddy
+// Email: akethireddy@wisc.edu
+// Team: LD
+// Role: Frontend
+// TA: Divyanshu Saxena
+// Lecturer: Gary Dahl
+// Notes to Grader: <optional extra notes>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to your account</title>
+    <script src="frontScript.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<p id="messageSpot"></p>
+<header class="w3-container w3-gray w3-center" style="padding: 128px 16px">
+    <h1 class="w3-text-dark-gray w3-jumbo ">Login Below</h1>
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="pass">Password:</label><br>
+        <input type= "password" id= "pass" name="pass">
+    </form>
+    <button id="login" onclick="login()">Log in</button>
+    <div class="w3-padding-16 w3-large" id="userMessage"></div>
+</header>
+</body>
+</html>
